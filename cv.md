@@ -2,7 +2,7 @@
 
 ## Contact information
 - City: Minsk
-- email: vostavhy@gmail.com
+- email: ruslan.abdallah2000@gmail.com
 - linkedin: https://www.linkedin.com/in/ruslan-abdalla-7947b31bb/
 - Phone: +375298435369
 
