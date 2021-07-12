@@ -66,9 +66,17 @@ span {
   margin-top: 1rem;
 }
 img {
-  position: absolute;
   top: 20%;
   left: 15%;
-  width: 50%;
-  height: 50%;
+}
+.img-container {
+  display: inline-block;
+}
+.git-img {
+  width: 40%;
+  height: 40%;
+}
+.rs-img {
+  width: 40%;
+  height: 40%;
 }
