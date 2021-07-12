@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <title>Ruslan Abd</title>
+  </head>
+  <body>
+    <h1>Ruslan Abdalla</h1>
+    <hr />
+    <h2>Contact Information</h2>
+    <hr />
+    <ul>
+      <li>City: Minsk</li>
+      <li>Email: ruslan.abdallah2000@gmail.com</li>
+      <li>
+        linkedin:
+        <a href="https://www.linkedin.com/in/ruslan-abdalla-7947b31bb/"
+          >Ruslan-Abd</a
+        >
+      </li>
+      <li>Phone: +375298435369</li>
+    </ul>
+    <h2>About me</h2>
+    <hr />
+    <p>
+      I am a hardworking and highly motivated person with a practical approach
+      to problem-solving.<br />I’ve been doing some random website projects and
+      code-alongs, at the brief time I mostly solve codewars challenges and
+      train on Three.js.
+    </p>
+    <h2>Skills</h2>
+    <hr />
+    <ul>
+      <li>HTML</li>
+      <li>CSS / SASS / BootStrap</li>
+      <li>Javascript / React / Three.js</li>
+      <li>Git</li>
+    </ul>
+    <h2>Code Example</h2>
+    <hr />
+    <span
+      >Write an algorithm that takes an array and moves all of the zeros to the
+      end, preserving the order of the other elements.</span
+    >
+    <pre><code>
+      var moveZeros = function (arr) {
+  // TODO: Program me
+  let removedItems=[];
+  for(let i &#x0003D; 0;i&lt;arr.length;i++){
+     if(arr[i]&#x0003D;&#x0003D;&#x0003D;0){removedItems+=arr.splice(i,1);i&equals;0;}
+  }
+   const newArr &equals removedItems.split('').map((i) &equals;&gt; Number(i));
+  return arr.concat(newArr);
+  }
+</code></pre>
+    <h2>Education</h2>
+    <hr />
+    <ul>
+      <li>
+        <a
+          href="https://www.freecodecamp.org/certification/fccbe83b79f/javascript-algorithms-and-data-structures"
+          >FreeCodeCamp Certificate</a
+        >
+      </li>
+      <li>CodeWars Challenges</li>
+      <li>
+        Udemy courses: The Web Developer Bootcamp 2021 / Advanced CSS and Sass:
+        Flexbox, Grid, Animations and More!
+      </li>
+    </ul>
+    <h2>English level</h2>
+    <hr>
+    <span>C1-C2 (I studied at an english school)</span>
+    <footer >
+      <div class="img-container">
+      <a href="https://rs.school/js/"
+        ><img src="./imgs&pngs/rs_school_js.svg" alt="RSschool logo" class="rs-img"
+      /></a>
+      <a href="https://github.com/Rus-Abd"
+      ><img src="./imgs&pngs/iconmonstr-github-1.svg" alt="github logo" class="git-img"
+    /></a>
+    </div>
+    </footer>
+  </body>
+ 
+</html>
