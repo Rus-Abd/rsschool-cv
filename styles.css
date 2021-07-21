@@ -10,7 +10,8 @@ body {
   margin: 0;
   padding: 0;
   height: 100vh;
-  color: #24292e;
+  color: #dbdbe5;
+  background-color: #21222d;
 }
 ul {
   list-style-type: disc;
@@ -46,7 +47,7 @@ pre {
   font-family: consolas;
 }
 footer {
-  background-color: #958ce8;
+  background-color: #dbdbe5;
   height: 25vh;
   position: relative;
   padding-top: 1rem;
