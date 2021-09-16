@@ -2,93 +2,277 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>Document</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap"
       rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+      integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7"
+      crossorigin="anonymous"
     />
-    <title>Ruslan Abd</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/default.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+      hljs.highlightAll();
+    </script>
   </head>
+
   <body>
-    <h1>Ruslan Abdalla</h1>
-    <hr />
-    <h2>Contact Information</h2>
-    <hr />
-    <ul>
-      <li>City: Minsk</li>
-      <li>Email: ruslan.abdallah2000@gmail.com</li>
-      <li>
-        linkedin:
-        <a href="https://www.linkedin.com/in/ruslan-abdalla-7947b31bb/"
-          >Ruslan-Abd</a
-        >
-      </li>
-      <li>Phone: +375298435369</li>
-    </ul>
-    <h2>About me</h2>
-    <hr />
-    <p>
-      I am a hardworking and highly motivated person with a practical approach
-      to problem-solving.<br />I’ve been doing some random website projects and
-      code-alongs, at the brief time I mostly solve codewars challenges and
-      train on Three.js.
-    </p>
-    <h2>Skills</h2>
-    <hr />
-    <ul>
-      <li>HTML</li>
-      <li>CSS / SASS / BootStrap</li>
-      <li>Javascript / React / Three.js</li>
-      <li>Git</li>
-    </ul>
-    <h2>Code Example</h2>
-    <hr />
-    <span
-      >Write an algorithm that takes an array and moves all of the zeros to the
-      end, preserving the order of the other elements.</span
-    >
-    <pre><code>
-      var moveZeros = function (arr) {
-  // TODO: Program me
-  let removedItems=[];
-  for(let i &#x0003D; 0;i&lt;arr.length;i++){
-     if(arr[i]&#x0003D;&#x0003D;&#x0003D;0){removedItems+=arr.splice(i,1);i&equals;0;}
-  }
-   const newArr &equals removedItems.split('').map((i) &equals;&gt; Number(i));
-  return arr.concat(newArr);
-  }
-</code></pre>
-    <h2>Education</h2>
-    <hr />
-    <ul>
-      <li>
-        <a
-          href="https://www.freecodecamp.org/certification/fccbe83b79f/javascript-algorithms-and-data-structures"
-          >FreeCodeCamp Certificate</a
-        >
-      </li>
-      <li>CodeWars Challenges</li>
-      <li>
-        Udemy courses: The Web Developer Bootcamp 2021 / Advanced CSS and Sass:
-        Flexbox, Grid, Animations and More!
-      </li>
-    </ul>
-    <h2>English level</h2>
-    <hr>
-    <span>C1-C2 (I studied at an english school)</span>
-    <footer >
-      <div class="img-container">
-      <a href="https://rs.school/js/"
-        ><img src="./imgs&pngs/rs_school_js.svg" alt="RSschool logo" class="rs-img"
-      /></a>
-      <a href="https://github.com/Rus-Abd"
-      ><img src="./imgs&pngs/iconmonstr-github-1.svg" alt="github logo" class="git-img"
-    /></a>
+    <div class="wrapper">
+      <header>
+        <nav>
+          <ul class="menu">
+            <li><a href="#!" class="nav__item">Home</a></li>
+            <li><a href="#!" class="nav__item">About</a></li>
+            <li><a href="#!" class="nav__item">Contact</a></li>
+            <li><a href="#!" class="nav__item">Faq</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <div class="column">
+          <section class="title-img">
+            <figure class="title__pic">
+              <img
+                src="./img/68C6DFF4-8345-442D-AB73-65E852795541.png"
+                alt="Face animated pic"
+              />
+            </figure>
+          </section>
+          <section class="about-me">
+            <h2>PROFILE</h2>
+            <p>
+              Hey, I'm a Junior Front-End Developer, currently working on
+              improving my web development skills, and solving codewars
+              challenges in free time. Feel free to contact me :&#41;
+            </p>
+            <hr />
+          </section>
+          <section class="contacts">
+            <h2>Contacts</h2>
+            <ul class="contact__wrapper">
+              <li class="contact__item">
+                <div class="contacts__icon contacts__icon_github"></div>
+                <div class="contact__text">
+                  <a
+                    href="https://github.com/Rus-Abd"
+                    target="_blank"
+                    class="contact__link"
+                    >https://github.com/Rus-Abd</a
+                  >
+                </div>
+              </li>
+              <li class="contact__item">
+                <div class="contacts__icon contacts__icon_mail"></div>
+                <div class="contact__text">
+                  <a
+                    href="mailto:ruslan.abdallah2000@gmail.com"
+                    target="_blank"
+                    class="contact__link"
+                    >ruslan.abdallah2000@gmail.com</a
+                  >
+                </div>
+              </li>
+              <li class="contact__item">
+                <div class="contacts__icon contacts__icon_telegram"></div>
+                <div class="contact__text">
+                  <a
+                    href="https://t.me/X999ZZ"
+                    target="_blank"
+                    class="contact__link"
+                    >https://t.me/X999ZZ</a
+                  >
+                </div>
+              </li>
+              <li class="contact__item">
+                <div class="contacts__icon contacts__icon_map"></div>
+                <div class="contact__text">
+                  <a
+                    href="https://www.google.com/maps/place/Minsk/@53.8845585,27.4532853,11z/data=!3m1!4b1!4m5!3m4!1s0x46dbcfd35b1e6ad3:0xb61b853ddb570d9!8m2!3d53.9006011!4d27.558972"
+                    target="_blank"
+                    class="contact__link"
+                    >Belarus, Minsk</a
+                  >
+                </div>
+              </li>
+            </ul>
+            <hr />
+          </section>
+
+          <section class="languages">
+            <h2>Languages</h2>
+            <ul class="contact__wrapper">
+              <li class="contact__item">
+                <div class="contacts__icon language__icon_usa"></div>
+                <div class="language__text">English&#40;C1&#41;</div>
+              </li>
+              <li class="contact__item">
+                <div class="contacts__icon language__icon_russia"></div>
+                <div class="language__text">Russian&#40;Native&#41;</div>
+              </li>
+              <li class="contact__item">
+                <div class="contacts__icon language__icon_lebanon"></div>
+                <div class="language__text">Arabic&#40;Native&#41;</div>
+              </li>
+            </ul>
+          </section>
+        </div>
+        <div class="column column__secondary">
+          <section class="title">
+            <h1>Ruslan Abdalla</h1>
+            <h3>Junior Front-End Developer</h3>
+            <hr />
+          </section>
+          <section class="education">
+            <h2>EDUCATION</h2>
+            <div class="education-container">
+              <div class="offline-education">
+                <h5>2020-2021</h5>
+                <span>BSUIR&#40;Information Systems and Technologies&#41;</span>
+              </div>
+
+              <div class="online-educaion">
+                <h5>2021-2022</h5>
+                <span>
+                  <a
+                    href="https://www.freecodecamp.org/certification/fccbe83b79f/javascript-algorithms-and-data-structures"
+                    >FreeCodeCamp&#40;JavaScript Algorithms and Data
+                    Structures&#41;</a
+                  ></span
+                >
+                <br />
+                <span>
+                  <a href="https://www.codewars.com/users/Rus-Abd"
+                    >CodeWars&#40;JavaScript Challenges&#41;</a
+                  ></span
+                >
+              </div>
+            </div>
+
+            <hr />
+          </section>
+
+          <section class="experience">
+            <h2>EXPERIENCE</h2>
+            <h5>Waiting to be filled...</h5>
+            <br />
+            <h6>Code Snippet&#40;RGB To Hex Conversion&#41;</h6>
+            <br />
+            <pre><code class="javascipt"
+                >function rgb(r, g, b){ // complete this function let arr = [0, 1,
+                2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"]; let rr; let
+                gg; let bb; if(r&lt;0){rr='00'} else if(r>255){rr='FF'}
+                else{rr=`${arr[Math.floor(r / 16)]}${arr[(r / 16 - Math.floor(r /
+                16)) * 16]}`} if(g&lt;0){gg='00'} else if(g>255){gg='FF'}
+                else{gg=`${arr[Math.floor(g / 16)]}${arr[(g / 16 - Math.floor(g /
+                16)) * 16]}`} if(b&lt;0){bb='00'} else if(b>255){bb='FF'}
+                else{bb=`${arr[Math.floor(b / 16)]}${arr[(b / 16 - Math.floor(b /
+                16)) * 16]}`} return(rr+gg+bb) }</code
+              ></pre>
+            <hr />
+          </section>
+          <section class="skills">
+            <h2>SKILLS</h2>
+            <ul>
+              <li class="skills__block">
+                <span>HTML</span>
+                <ul class="skills-list">
+                  <li class="skills-list__item"></li>
+                  <li class="skills-list__item"></li>
+                  <li class="skills-list__item"></li>
+                  <li class="skills-list__item"></li>
+                  <li class="skills-list__item"></li>
+                  <li class="skills-list__item"></li>
+                  <li class="skills-list__item"></li>
+                  <li class="skills-list__item skills-list__item_gray"></li>
+                  <li class="skills-list__item skills-list__item_gray"></li>
+                  <li class="skills-list__item skills-list__item_gray"></li>
+                </ul>
+              </li>
+              <li class="skills__block">
+                <span>CSS</span>
+                <ul class="skills-list">
+                  <li class="skills-list__item"></li>
+                  <li class="skills-list__item"></li>
+                  <li class="skills-list__item"></li>
+                  <li class="skills-list__item"></li>
+                  <li class="skills-list__item"></li>
+                  <li class="skills-list__item"></li>
+                  <li class="skills-list__item"></li>
+                  <li class="skills-list__item skills-list__item_gray"></li>
+                  <li class="skills-list__item skills-list__item_gray"></li>
+                  <li class="skills-list__item skills-list__item_gray"></li>
+                </ul>
+              </li>
+              <li class="skills__block">
+                <span>JAVASCRIPT</span>
+                <ul class="skills-list">
+                  <li class="skills-list__item"></li>
+                  <li class="skills-list__item"></li>
+                  <li class="skills-list__item"></li>
+                  <li class="skills-list__item"></li>
+                  <li class="skills-list__item"></li>
+                  <li class="skills-list__item"></li>
+                  <li class="skills-list__item skills-list__item_gray"></li>
+                  <li class="skills-list__item skills-list__item_gray"></li>
+                  <li class="skills-list__item skills-list__item_gray"></li>
+                  <li class="skills-list__item skills-list__item_gray"></li>
+                </ul>
+              </li>
+              <li class="skills__block">
+                <span>GIT</span>
+                <ul class="skills-list">
+                  <li class="skills-list__item"></li>
+                  <li class="skills-list__item"></li>
+                  <li class="skills-list__item"></li>
+                  <li class="skills-list__item"></li>
+                  <li class="skills-list__item"></li>
+                  <li class="skills-list__item skills-list__item_gray"></li>
+                  <li class="skills-list__item skills-list__item_gray"></li>
+                  <li class="skills-list__item skills-list__item_gray"></li>
+                  <li class="skills-list__item skills-list__item_gray"></li>
+                  <li class="skills-list__item skills-list__item_gray"></li>
+                </ul>
+              </li>
+              <li class="skills__block">
+                <span>REACT</span>
+                <ul class="skills-list">
+                  <li class="skills-list__item"></li>
+                  <li class="skills-list__item"></li>
+                  <li class="skills-list__item"></li>
+                  <li class="skills-list__item skills-list__item_gray"></li>
+                  <li class="skills-list__item skills-list__item_gray"></li>
+                  <li class="skills-list__item skills-list__item_gray"></li>
+                  <li class="skills-list__item skills-list__item_gray"></li>
+                  <li class="skills-list__item skills-list__item_gray"></li>
+                  <li class="skills-list__item skills-list__item_gray"></li>
+                  <li class="skills-list__item skills-list__item_gray"></li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </main>
+      <footer>
+        <div class="footer">
+          <div class="footer__block footer__github">
+            <a href="https://github.com/Rus-Abd" target="_blank"></a>
+          </div>
+          <div class="footer__block">
+            <a
+              class="footer__rs"
+              href="https://rs.school/js/"
+              target="_blank"
+            ></a>
+          </div>
+          <span>2021</span>
+        </div>
+      </footer>
     </div>
-    </footer>
   </body>
- 
 </html>
