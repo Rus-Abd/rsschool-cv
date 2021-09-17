@@ -30,20 +30,19 @@
             <li><a href="#!" class="nav__item">Home</a></li>
             <li><a href="#!" class="nav__item">About</a></li>
             <li><a href="#!" class="nav__item">Contact</a></li>
-            <li><a href="#!" class="nav__item">Faq</a></li>
           </ul>
         </nav>
       </header>
       <main>
         <div class="column">
-          <section class="title-img">
+          <div class="title-img">
             <figure class="title__pic">
               <img
                 src="./img/68C6DFF4-8345-442D-AB73-65E852795541.png"
                 alt="Face animated pic"
               />
             </figure>
-          </section>
+          </div>
           <section class="about-me">
             <h2>PROFILE</h2>
             <p>
@@ -164,15 +163,27 @@
             <h6>Code Snippet&#40;RGB To Hex Conversion&#41;</h6>
             <br />
             <pre><code class="javascipt"
-                >function rgb(r, g, b){ // complete this function let arr = [0, 1,
-                2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"]; let rr; let
-                gg; let bb; if(r&lt;0){rr='00'} else if(r>255){rr='FF'}
-                else{rr=`${arr[Math.floor(r / 16)]}${arr[(r / 16 - Math.floor(r /
-                16)) * 16]}`} if(g&lt;0){gg='00'} else if(g>255){gg='FF'}
-                else{gg=`${arr[Math.floor(g / 16)]}${arr[(g / 16 - Math.floor(g /
-                16)) * 16]}`} if(b&lt;0){bb='00'} else if(b>255){bb='FF'}
-                else{bb=`${arr[Math.floor(b / 16)]}${arr[(b / 16 - Math.floor(b /
-                16)) * 16]}`} return(rr+gg+bb) }</code
+                >class Node {
+                  constructor(value, left = null, right = null){
+                    this.value = value;
+                    this.left = left;
+                    this.right = right;
+                  }
+                }
+                
+                const isBST = node => {
+                  const arr1 = [];
+                  t(node,arr1);
+                  return JSON.stringify(arr1)===JSON.stringify(arr1.slice().sort((a,b)=>a-b))||
+                         JSON.stringify(arr1)===JSON.stringify(arr1.slice().sort((a,b)=>b-a))
+                };
+                
+                function t(root,arr){
+                  if(!root) return;
+                  t(root.left,arr)
+                  arr.push(root.value)
+                  t(root.right,arr)
+                }</code
               ></pre>
             <hr />
           </section>
