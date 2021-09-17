@@ -47,6 +47,7 @@ main {
 a {
   text-decoration: none;
   transition: all 300ms;
+  color:#000;
 }
 a:hover {
   transition: 0.5s;
