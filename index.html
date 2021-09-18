@@ -24,14 +24,19 @@
 
   <body>
     <div class="wrapper">
-      <header>
+      <header id="home">
         <nav class="navbar">
           <img src="./img/animat-rocket.gif" alt="" class="nav__logo" />
           <ul class="menu">
-            <li><a href="#!" class="nav__item">Home</a></li>
-            <li><a href="#!" class="nav__item">About</a></li>
-            <li><a href="#!" class="nav__item">Contact</a></li>
+            <li><a href="#home" class="nav__item">Home</a></li>
+            <li><a href="#about" class="nav__item">About</a></li>
+            <li><a href="#contact" class="nav__item">Contact</a></li>
           </ul>
+          <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
         </nav>
       </header>
       <main>
@@ -39,6 +44,8 @@
           <div class="title-img">
             <figure class="title__pic">
               <img
+                style="display: inline"
+                class="face__img"
                 src="./img/68C6DFF4-8345-442D-AB73-65E852795541.png"
                 alt="Face animated pic"
               />
@@ -53,7 +60,7 @@
             </p>
             <hr />
           </section>
-          <section class="contacts">
+          <section class="contacts" id="contact">
             <h2>Contacts</h2>
             <ul class="contact__wrapper">
               <li class="contact__item">
@@ -104,7 +111,7 @@
             <hr />
           </section>
 
-          <section class="languages">
+          <section class="languages" id="about">
             <h2>Languages</h2>
             <ul class="contact__wrapper">
               <li class="contact__item">
@@ -286,5 +293,6 @@
         </div>
       </footer>
     </div>
+    <script src="./app.js"></script>
   </body>
 </html>
