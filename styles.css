@@ -97,7 +97,10 @@ li {
 }
 
 /* header start */
-
+nav {
+  display: flex;
+  align-items: center;
+}
 .nav__item:hover {
   transition: 0.5s;
   color: green;
@@ -124,6 +127,17 @@ li {
 .nav__item {
   font-size: 45px;
   margin: 0 15px;
+}
+.burger {
+  display: none;
+  cursor: pointer;
+}
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #000;
+  margin: 5px;
+  transition: all 0.3s ease;
 }
 /* header end */
 
@@ -373,4 +387,54 @@ li {
   .about-me > h2 {
     margin-top: 0;
   }
+  body {
+    overflow-x: hidden;
+  }
+  .menu {
+    position: absolute;
+    right: 0px;
+    height: 100vh;
+    top: 8vh;
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+    justify-content: space-evenly;
+  }
+  .menu li {
+    opacity: 0;
+  }
+  .menu li a {
+    color: #fff;
+  }
+  .burger {
+    display: block;
+  }
+}
+.nav-active {
+  transform: translateX(0%);
+}
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
 }
