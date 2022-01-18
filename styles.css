@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
 
 * {
   padding: 0;
@@ -18,7 +18,7 @@ html {
   overflow-x: hidden;
 }
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 100;
 }
 body::-webkit-scrollbar {
@@ -140,7 +140,7 @@ nav {
   height: 3px;
   background-color: #000;
   margin: 5px;
-  margin-left: 10px;
+  margin-right: 10px;
   transition: all 0.3s ease;
 }
 /* header end */
