@@ -118,6 +118,10 @@ nav {
   display: flex;
   width: 100%;
   justify-content: space-between;
+  transition: all 0.5s ease-in;
+}
+.navbar-active {
+  background-color: #000000;
 }
 .nav__logo {
   width: 50px;
