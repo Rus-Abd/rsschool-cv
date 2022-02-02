@@ -291,9 +291,16 @@ nav {
 }
 .experience-imgs img:hover {
   transform: none;
-  webkit-filter: blur(4px); /* Chrome, Safari, Opera */
+  webkit-filter: blur(4px);
   filter: blur(4px);
-  content: 'asadasd';
+}
+.experience-imgs img:nth-of-type(1) {
+  width: 400px;
+  height: 300px;
+}
+.experience-imgs img:nth-of-type(2) {
+  width: 200px;
+  height: 300px;
 }
 .experience-imgs span {
   max-width: none;
@@ -499,5 +506,19 @@ nav {
   .title__pic {
     width: 321px;
     height: 321px;
+  }
+  .experience-imgs a {
+    color: #ffffff;
+  }
+  .experience-imgs img {
+    margin-left: -50px;
+  }
+  .experience-imgs img:nth-of-type(1) {
+    width: 240px;
+    height: 200px;
+  }
+  .experience-imgs span {
+    left: -50px;
+    width: 240px;
   }
 }
