@@ -272,6 +272,38 @@ nav {
 .experience > h5 {
   font-size: 20px;
 }
+.experience-imgs {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.experience-imgs img {
+  object-fit: contain;
+}
+.experience-imgs a {
+  position: relative;
+  color: transparent;
+}
+.experience-imgs a:hover {
+  transform: none;
+  color: #ffffff;
+}
+.experience-imgs img:hover {
+  transform: none;
+  webkit-filter: blur(4px); /* Chrome, Safari, Opera */
+  filter: blur(4px);
+  content: 'asadasd';
+}
+.experience-imgs span {
+  max-width: none;
+  left: 0;
+  width: 100%;
+  top: 50%;
+  position: absolute;
+  text-align: center;
+  font-size: 22px;
+}
 
 /* experinece end */
 
